@@ -16,11 +16,18 @@
 	-webkit-transform: rotate3d(-1,1,0,15deg);
 }
 
-.cube{
+.cube-container{
 	position: absolute;
 	left: 40%;
 	top: 20%;
+	height: 300px;
+	width: 300px;
+}
+.cube{
+	height: 300px;
+	width: 300px;
 	-webkit-transform-style: preserve-3d;
+	-webkit-transform-origin-z: -150px;
 	-webkit-transform: rotate3d(-1,1,0,0deg);
 }
 
@@ -51,11 +58,19 @@
 	-webkit-transform: rotate3d(1,0,0,-90deg) translate3d(0,150px,150px);
 }
 
-.cube2{
+.cube2-container{
 	position: absolute;
 	left: 265px;
 	top: 44%;
+	width: 100px;
+	height: 100px;
+}
+
+.cube2{
+	height: 100px;
+	width: 100px;
 	-webkit-transform-style: preserve-3d;
+	-webkit-transform-origin-z: -140px;
 	-webkit-transform: rotate3d(-1,1,0,0deg) translate3d(0,0,-90px);
 }
 
